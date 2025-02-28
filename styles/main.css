@@ -1,0 +1,12 @@
+.information__wrap{
+    display: flex;
+    margin-top: 0;
+ margin-bottom: 15px;
+ padding: 10px;
+ text-decoration: none;
+ text-align: center;
+}
+
+.information__image{
+    margin: 0 auto;
+}

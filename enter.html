@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+    <header class="header container">
+        <a class="header__logo-wrap" href="index.html">
+            <img class="header__logo" src="images/logo.jpg" alt="Логотип">
+            <h1 class="header__title">Victory over yourself</h1>
+        </a>
+        <div class="header__button">
+            <a class="header__button" href="enter.html"> Войти</a>
+        </div>
+        <nav class="header__menu">
+            <ul class="menu">
+                <li class="menu__item menu__item--active">
+                    <a class="menu__link" href="index.html">Главная</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="lesson schedule.html"> Расписание занятий</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="personal account.html"> Личный кабинет</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main container">
+        <div class="enter__container">
+            <div class="slider"></div>
+            <div class="btn">
+                <button class="login__button">Войти</button>
+                <button class="signup__button">Зарегистрироваться</button>
+            </div>
+
+            <div class="from-section">
+
+                <div class="login-box">
+                    <input type="email" class="email ele" placeholder="Почта">
+                    <input type="password" class="password ele" placeholder="Пароль">
+                    <button class="login__button">Войти</button>
+                </div>
+
+                <div class="signup-box">
+                    <input type="text" class="name ele" placeholder="Введите имя">
+                    <input type="email" class="email ele" placeholder="Почта">
+                    <input type="password" class="password ele" placeholder="Пароль">
+                    <input type="password" class="password ele" placeholder="Повторите пароль">
+                    <button class="signup__button">Зарегистрироваться</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer class="container">
+        <div class="footer  container">
+            <div class="footer__content">
+                <h4>Контакты</h4>
+                <p>Электронная почта: victoryoveryourself@gmail.com</p>
+                <p>Телефон: +79229123456</p>
+                <p>Фомина Виктория, ЭК-21</p>
+            </div>
+
+            <div class="footer__content">
+                <h4>Подпишитесь на нас</h4>
+                <ul class="social-icons ">
+                    <li><a href=""><i class="fab fa-telegram"></i></a></li>
+                    <li><a href=""><i class="fab fa-vk"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <form class="form" action="">
+                    <input type="text" placeholder="Введите запрос">
+                    <button class="form__button" type="submit">Поиск</button>
+                </form>
+            </div>
+
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2025</p>
+        </div>
+    </footer>
+</body>
+
+</html>

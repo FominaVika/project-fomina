@@ -1,0 +1,80 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  
+    background: rgb(0, 0, 0);
+    padding-top: 50px;
+  }
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+   }
+   .menu__link{
+    display: block;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(255, 167, 236);
+    color: rgb(32, 24, 24);
+    text-decoration: none;
+   }
+   .header__button{
+    display: inline-block;
+     padding: 10px;
+     margin: 5px;
+     background-color: rgb(255, 167, 236);
+     color: rgb(32, 24, 24);
+     text-decoration: none;
+    }  
+    .header__login{
+        display: inline-block;
+         padding: 10px;
+         margin: 5px;
+         background-color: rgb(255, 167, 236);
+         color: rgb(255, 255, 255);
+         text-decoration: none;
+         transition: background-color 0.3s;
+         border: 2px solid rgb(255, 167, 236);
+         border-radius: 5px;
+         margin-right: 20px;
+        }
+    .header__logo-wrap{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+       }
+       .header__logo-wrap{
+        text-decoration: none;
+        color: rgb(46, 43, 43);
+       }
+       .header__title{
+        margin: 0;
+       }   
+       .header{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-bottom: 20px;
+       }
+       .header__menu{
+        width: 100%;
+        flex-shrink: 0;
+       } 
+       .button:hover {
+        background-color: rgb(255, 167, 236);
+      }
+       
+      .header__login:hover {
+        background-color: rgb(255, 167, 236);
+        color: white;
+      }
+    
+    .header__logo{
+        width: 70px;
+    }                   
