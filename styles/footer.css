@@ -91,3 +91,6 @@
     .form__button:hover {
       background-color: rgb(255, 167, 236);
     }
+    .form__text{
+        color:#000000
+    }
