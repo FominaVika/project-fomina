@@ -4,57 +4,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Студия растяжки</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 
 <body>
+    <!--Заголовок-->
     <header class="header container">
+        <!--Логотип-->
         <a class="header__logo-wrap" href="index.html">
             <img class="header__logo" src="images/logo.jpg" alt="Логотип">
             <h1 class="header__title">Victory over yourself</h1>
         </a>
-        <div class="header__button">
-            <a class="header__button" href="enter.html"> Войти</a>
-        </div>
-        <nav class="header__menu">
-            <ul class="menu">
-                <li class="menu__item menu__item--active">
-                    <a class="menu__link" href="index.html">Главная</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="lesson schedule.html"> Расписание занятий</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="personal account.html"> Личный кабинет</a>
-                </li>
+         <!--Навигация-->
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="menu__item"><a href="#promo" class="header__item-link header__item-link--active">Главная</a></li>
+                <li class="header__item"><a href="#card" class="header__item-link" href="#">Направления</a></li>
+                <li class="header__item"><a href="#recipe" class="header__item-link" href="#">Запись</a></li>
             </ul>
         </nav>
+        <!--/ Навигация-->
+        <button class="header__login" type="button">
+            Войти
+        </button>
     </header>
+    <!--/ Заголовок -->
+    <!-- Основной контент -->
     <main class="main container">
+        <!-- Первый экран -->
+        <section class="section promo" id="promo">
+            <div class="promo__content">
+                <h2 class="promo__title section__title">С каждым движением ближе к свободе</h2>
+                <p class="promo__description">Victory over yourself - это уникальное пространство, посвященное развитию гибкости и улучшению общего самочувствия. Добро пожаловать к нам! </p>
+            </div>
         <div class="information">
-            <h2 class="information__title">Информация о студии </h2>
+            <h2 class="information__title">Краткая информация</h2>
             <div class="information__wrap">
                 <div class="information__card">
-                    <img class="information__image" src="images/photo coach.jpg" alt="" width="200">
+                    <img class="promo__image" src="images/photo coach.jpg" alt="Изображение тренера" width="200" height="500">
                     <p class="information__subtitle">Тренер - Виктория</p>
                     <p class="information__desc">Фомина Виктория Алексеевна - сертифицированный тренер по пилатесу и
                         функциональному тренингу. Поможет Вам улучшить гибкость, снять стресс и обрести гармонию со
                         своим телом.</p>
-                    <a class="info__link" href="#"> Читать дальше</a>
-                </div>
-                <div class="information__card">
-                    <img class="information__image" src="images/photo studio 1.jpg" alt="" width="200">
+                </div> 
+                <div class="information__card">  
+                    <img class="promo__image" src="images/photo studio 1.jpg" alt="Изображение студии" width="200" height="500">
                     <p class="information__subtitle">Студия растяжки "Victory over yourself"</p>
                     <p class="information__desc">Студия расположена в самом центре города Кирово-Чепецка по адресу: ул.
                         Калинина, 24а, удобное расположение, рядом автобусная остановка, парковка для автомобилей.</p>
-                    <a class="information__link" href="#"> Читать дальше</a>
-                </div>
-            </div>
-        </div>
+                </div> 
+            </div> 
+        </section>
+        <!--/ Первый экран -->
+
     </main>
+    
+    <section class="directions card" id="card">
+        <h2 class="directions__title section__title">Направления</h2>
+        <p class="directions__card">Выбери для себя понравившееся направление и приходи пробовать! </p>
+            <li class="directions__item">
+                <img src="img/photo stretching.jpg" alt="Stretching" class="directions__img">
+                <h3 class="directions__sudtitle">Растяжка</h3>
+                <p class="directions__test">сесть на шпагат, улучшить гибкость, основа здорового тела</p>
+                <button class="directions__link" type="button">Подробнее</button>
+            </li>
+            <li class="directions__item">
+                <img src="img/photo yoga.jpg" alt="Yoga" class="directions__img">
+                <h3 class="directions__sudtitle">Йога</h3>
+                <p class="directions__test">расслабиться, понять свое тело</p>
+                <button class="directions__link" type="button">Подробнее</button>
+            </li>
+            <li class="directions__item">
+                <img src="img/photo balance.jpg" alt="Balance" class="directions__img">
+                <h3 class="directions__sudtitle">Баланс</h3>
+                <p class="directions__test">выполнение поз с разными точками опоры на удержание баланса</p>
+                <button class="directions__link" type="button">Подробнее</button>  
+            </li>
+            <li class="directions__item">
+                <img src="img/photo cardio.jpg" alt="Cardio" class="directions__img">
+                <h3 class="directions__sudtitle">Кардио</h3>
+                <p class="directions__test">тонус тела и сжигание калорий</p>
+                <button class="directions__link" type="button">Подробнее</button>
+            </li>
+            <li class="directions__item">
+                <img src="img/photo power.jpg" alt="Power" class="directions__img">
+                <h3 class="directions__sudtitle">Силовая</h3>
+                <p class="directions__test">силовая тренировка с гантелями и резинками</p>
+                <button class="directions__link" type="button">Подробнее</button> 
+            </li>        
+        </u1>
+        <div class="directions__button">
+            <button class="directions__left">
+                <img src="img/left.svg" alt="" class="directions__left-swiper">
+            </button>
+            <button class="directions__right">
+                <img src="img/Right.svg" alt="" class="directions__right-swiper"
+            </button>
+        </div>
+    </section>
+
+    <section class="section record" id="recprd">
+
+    </section>
+</main>
+<!--/ Основной контент -->
+<!-- Подвал -->
     <footer class="container">
         <div class="footer  container">
             <div class="footer__content">
@@ -83,7 +140,7 @@
         <div class="bottom-bar">
             <p>&copy; 2025</p>
         </div>
-    </footer>
+    </footer>      
 
     <script src="scripts/script.js"></script>
 </body>

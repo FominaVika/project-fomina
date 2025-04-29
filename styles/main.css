@@ -10,3 +10,27 @@
 .information__image{
     margin: 0 auto;
 }
+
+.directions__ {
+    width: 1350px;
+    margin-top: 60px;
+    display: flex;
+    gap: 40px;
+    overflow: hidden;
+}
+
+.directions__img {
+    min-width: 360px;
+}
+
+.directions__item {
+    width: 360px;
+    transition: 0.3s ease;
+}
+
+.directions__link {
+    border: none;
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
