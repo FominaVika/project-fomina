@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Студия растяжки</title>
-    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
@@ -27,11 +26,12 @@
             </ul>
         </nav>
         <!--/ Навигация-->
-        <button class="header__login" type="button">
+        <button class="header__button" type="button">
             Войти
         </button>
     </header>
     <!--/ Заголовок -->
+
     <!-- Основной контент -->
     <main class="main container">
         <!-- Первый экран -->
@@ -44,14 +44,14 @@
             <h2 class="information__title">Краткая информация</h2>
             <div class="information__wrap">
                 <div class="information__card">
-                    <img class="promo__image" src="images/photo coach.jpg" alt="Изображение тренера" width="200" height="500">
+                    <img class="promo__image information__image" src="images/photo coach.jpg" alt="Изображение тренера" width="200" height="500">
                     <p class="information__subtitle">Тренер - Виктория</p>
                     <p class="information__desc">Фомина Виктория Алексеевна - сертифицированный тренер по пилатесу и
                         функциональному тренингу. Поможет Вам улучшить гибкость, снять стресс и обрести гармонию со
                         своим телом.</p>
                 </div> 
                 <div class="information__card">  
-                    <img class="promo__image" src="images/photo studio 1.jpg" alt="Изображение студии" width="200" height="500">
+                    <img class="promo__image information__image" src="images/photo studio 1.jpg" alt="Изображение студии" width="200" height="500">
                     <p class="information__subtitle">Студия растяжки "Victory over yourself"</p>
                     <p class="information__desc">Студия расположена в самом центре города Кирово-Чепецка по адресу: ул.
                         Калинина, 24а, удобное расположение, рядом автобусная остановка, парковка для автомобилей.</p>
@@ -61,55 +61,103 @@
         <!--/ Первый экран -->
 
     </main>
-    
+    <!-- Слайдер (Направления)-->
     <section class="directions card" id="card">
         <h2 class="directions__title section__title">Направления</h2>
         <p class="directions__card">Выбери для себя понравившееся направление и приходи пробовать! </p>
+        <ul class="directions__wrap">
             <li class="directions__item">
-                <img src="img/photo stretching.jpg" alt="Stretching" class="directions__img">
+                <img src="images/stretching.jpg" alt="Stretching" class="directions__img">
                 <h3 class="directions__sudtitle">Растяжка</h3>
-                <p class="directions__test">сесть на шпагат, улучшить гибкость, основа здорового тела</p>
-                <button class="directions__link" type="button">Подробнее</button>
+                <p class="directions__test">Описание: сесть на шпагат, улучшить гибкость, основа здорового тела</p>
+                <button class="directions__link" data-id="1" type="button">Подробнее</button>
             </li>
-            <li class="directions__item">
-                <img src="img/photo yoga.jpg" alt="Yoga" class="directions__img">
+            <li class="directsion__item">
+                <img src="images/yoga.jpg" alt="Yoga" class="directions__img">
                 <h3 class="directions__sudtitle">Йога</h3>
-                <p class="directions__test">расслабиться, понять свое тело</p>
+                <p class="directions__test">Описание: расслабиться, понять свое тело</p>
                 <button class="directions__link" type="button">Подробнее</button>
             </li>
             <li class="directions__item">
-                <img src="img/photo balance.jpg" alt="Balance" class="directions__img">
+                <img src="images/balance.jpg" alt="Balance" class="directions__img">
                 <h3 class="directions__sudtitle">Баланс</h3>
-                <p class="directions__test">выполнение поз с разными точками опоры на удержание баланса</p>
+                <p class="directions__test">Описание: выполнение поз с разными точками опоры на удержание баланса</p>
                 <button class="directions__link" type="button">Подробнее</button>  
             </li>
             <li class="directions__item">
-                <img src="img/photo cardio.jpg" alt="Cardio" class="directions__img">
+                <img src="images/cardio.jpg" alt="Cardio" class="directions__img">
                 <h3 class="directions__sudtitle">Кардио</h3>
-                <p class="directions__test">тонус тела и сжигание калорий</p>
+                <p class="directions__test">Описание: тонус тела и сжигание калорий</p>
                 <button class="directions__link" type="button">Подробнее</button>
             </li>
             <li class="directions__item">
-                <img src="img/photo power.jpg" alt="Power" class="directions__img">
+                <img src="images/power.jpg" alt="Power" class="directions__img">
                 <h3 class="directions__sudtitle">Силовая</h3>
-                <p class="directions__test">силовая тренировка с гантелями и резинками</p>
+                <p class="directions__test">Описание: силовая тренировка с гантелями и резинками</p>
                 <button class="directions__link" type="button">Подробнее</button> 
             </li>        
-        </u1>
+        </ul>
         <div class="directions__button">
             <button class="directions__left">
-                <img src="img/left.svg" alt="" class="directions__left-swiper">
+                <img src="images/left1.png" alt="" class="directions__left-swiper">
             </button>
             <button class="directions__right">
-                <img src="img/Right.svg" alt="" class="directions__right-swiper"
+                <img src="images/right1.png" alt="" class="directions__right-swiper">
             </button>
         </div>
+    </div>
     </section>
 
-    <section class="section record" id="recprd">
+    <section class="section record" id="record">
 
     </section>
 </main>
+
+<div class="applications" hidden data-id="1">
+    <section class="application">
+        <div class="application__wrap">
+            <img class="directsion__image" src="images/stretching.jpg" alt="Фото" width="200">
+            <h5 class="application__title">
+                Stretching
+            </h5>
+            <p class="application__text">Растяжка – развивает гибкость и подвижность суставов, улучшает эластичность мышц, снимает напряжение и улучшает осанку. Подходит для всех уровней подготовки.
+                </p>
+        </div>
+        <button class="application__close" type="button">Закрыть</button>
+    </section>
+</div>
+<div class="applications" hidden data-id="2">
+    <section class="application">
+        <div class="application__wrap">
+            <img class="directsion__image" src="images/yoga.jpg" alt="Фото" width="200">
+            <h5 class="application__title">
+                Stretching
+            </h5>
+            <p class="application__text">Йога – сочетает физические упражнения (асаны), дыхательные практики (пранаямы) и медитацию. Способствует гармоничному развитию тела и ума, улучшает гибкость, силу и баланс, снимает стресс.
+                </p>
+        </div>
+        <button class="application__close" type="button">Закрыть</button>
+    </section>
+</div>
+<div class="applications" hidden data-id="3">
+    <section class="application">
+        <div class="application__wrap">
+            <img class="directsion__image" src="images/balance.jpg" alt="Фото" width="200">
+            <h5 class="application__title">
+                Stretching
+            </h5>
+            <p class="application__text">Баланс – фокусируется на развитии равновесия и координации движений. Укрепляет мышцы-стабилизаторы, улучшает осанку и повышает общую физическую подготовку.
+                </p>
+        </div>
+        <button class="application__close" type="button">Закрыть</button>
+    </section>
+</div>
+<!-- Моадальное окно (Запись) --> 
+<section class="welcome"
+    <div class="welcom__block">
+        <h1 class="welcome__title">Victory over yourself</h1>
+        <p class="welcome__text"
+    </div>
 <!--/ Основной контент -->
 <!-- Подвал -->
     <footer class="container">
