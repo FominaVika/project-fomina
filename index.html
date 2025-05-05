@@ -20,13 +20,13 @@
          <!--Навигация-->
         <nav class="header__nav">
             <ul class="header__list">
-                <li class="menu__item"><a href="#promo" class="header__item-link header__item-link--active">Главная</a></li>
+                <!-- <li class="menu__item"><a href="#promo" class="header__item-link header__item-link--active">Главная</a></li>
                 <li class="header__item"><a href="#card" class="header__item-link" href="#">Направления</a></li>
-                <li class="header__item"><a href="#recipe" class="header__item-link" href="#">Запись</a></li>
+                <li class="header__item"><a href="#record" class="header__item-link" href="#">Запись</a></li> -->
             </ul>
         </nav>
         <!--/ Навигация-->
-        <button class="header__button" type="button">
+        <button class="header__button" type="button" href="enter.html">
             Войти
         </button>
     </header>
@@ -113,7 +113,7 @@
     </section>
 </main>
 
-<div class="applications" hidden data-id="1">
+<!-- <div class="applications" hidden data-id="1">
     <section class="application">
         <div class="application__wrap">
             <img class="directsion__image" src="images/stretching.jpg" alt="Фото" width="200">
@@ -151,13 +151,46 @@
         </div>
         <button class="application__close" type="button">Закрыть</button>
     </section>
-</div>
-<!-- Моадальное окно (Запись) --> 
-<section class="welcome"
-    <div class="welcom__block">
-        <h1 class="welcome__title">Victory over yourself</h1>
-        <p class="welcome__text"
+</div> -->
+<!--Запись-->
+<section class="record">
+    <div class="record__wrap">
+        <h1 class="record__title">
+                Тянись к фигуре мечты
+        </h1>
+            <p class="record__text">
+                    Начни не с понедельника, а прямо сейчас!
+            </p>
+            <button class="record__button" type="button">
+                    Записаться
+            </button>
     </div>
+
+        <div class="record__img">
+        <img class="record__images" src="images/studio3.jpg" alt="Фото" width="200"> 
+        </div>
+</section>
+<!-- Модальное окно (Запись) --> 
+<div class="applications" hidden>
+    <section class="application">
+        <div class="application__wrap">
+            <h2 class="application__titlt">
+                Добро пожаловать в студию растяжки! <br> Пробное занятие со скидкой 50%! 
+            </h2>
+        <p class="application__text">Записаться на пробное занятие</p>
+        </div>
+    <div >
+        <button class="application__close" type="button"> Закрыть </button>
+        <form action="/" class="application__form">
+            <input class="application__input" type="text" placeholder="Имя">
+            <input class="application__input" type="tel" placeholder="Телефон">
+            <input class="application__input" type="email" placeholder="E-mail">
+        <button class="application__button button">Отправить заявку</button>
+        </form>
+    <img class="application__img" src="=images/studio3.jpg" alt="Студия 3" class="application__img" width="750" height="500">
+    </div>
+    </section>
+</div>
 <!--/ Основной контент -->
 <!-- Подвал -->
     <footer class="container">

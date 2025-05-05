@@ -1,0 +1,27 @@
+.record {
+    display: flex;
+    gap: 10px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.record__img {
+    width: 500px;
+    flex-shrink: 0;
+}
+
+.record__button {
+    display: block;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(241, 128, 226);
+    text-decoration: none;
+    margin-top: auto;
+    margin-right: auto;
+}
+
+.record__wrap {
+    display: flex;
+    flex-direction: column;
+}

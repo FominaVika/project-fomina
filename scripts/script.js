@@ -53,16 +53,23 @@ document.addEventListener("DOMContentLoaded", () => {
 // });
 
 // Модальное окно
-const directions__link = document.querySelectorAll(".directions__link");
-// directions__link.addEventListener('click' () => {
-//  console.log ("Нажали накнопку Подробнее");
-// })
-directions__link.forEach((item, index) => {
+// const record__button = document.querySelectorAll(".record__button");
 
-    item.addEventListener('click', () => {
-        const dataid = item.detaset.id;
-        const modalApplication = document.querySelector(".applications[data-id'" + dataid + "']")
-        modalApplication.removeAttribute("hidden")
+// record__button.forEach((item, index) => {
+
+//     item.addEventListener('click', () => {
+//         const dataid = item.detaset.id;
+//         const modalApplication = document.querySelector(".applications[data-id'" + dataid + "']")
+//         modalApplication.removeAttribute("hidden")
+
+const record__button = document.querySelector(".record__button");
+const modalApplication = document.querySelector(".applications");
+if (record__button && modalApplication) {
+    record__button.addEventListener("click", () => {
+        modalApplication.removeAttribute("hidden");
+    });
+}
+
 
         // Закрытие модального окна
         window.addEventListener("click", (event) => {
@@ -75,8 +82,7 @@ directions__link.forEach((item, index) => {
         closeModalButton.addEventListener("click", () => {
             modalApplication.setAttribute("hidden", true);
         });
-    });
-});
+   
 
 // Создание слайдера
 let currentIndex = 0;
@@ -118,7 +124,7 @@ function updateSlider() {
 }
 
 // Массивы
-const wrapContainer = document.querySelector (".directions");
+const wrapContainer = document.querySelector (".directions card");
 if (wrapContainer) {
     const dataTitleWrap= [
         "Stretching",
@@ -133,4 +139,34 @@ if (wrapContainer) {
         titleWrap.forEach((item, index) => {
         item.textContent = dataTitleWrap[index];
     });
+}
+
+//Динамический вывод навигационного меню
+const headerMenu = document.querySelector('.header__nav');
+if (headerMenu) {
+    const headerList = headerMenu.querySelector('.header__list');
+    const menuData = {
+        link1: {
+            link: '#promo',
+            title: 'Главная',
+        },
+        link4: {
+            link: '#card',
+            title: 'Направления',
+        },
+        link3: {
+            link: '#record',
+            title: 'Запись',
+        }
+    }
+    // Функция для создания ссылок 
+    function createLink(linkObj) 
+    { const link = ` <li class="menu__item"> <a href="${linkObj.link}" class="header__item-link">${linkObj.title}</a> </li> `; 
+    return link; } 
+    // Добавляем пункты меню динамически 
+    for (const key in menuData) { 
+        const link = menuData[key]; 
+        const linkHtml = createLink(link); 
+        headerList.insertAdjacentHTML('beforeend', linkHtml); 
+    } 
 }

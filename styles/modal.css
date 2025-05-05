@@ -57,3 +57,7 @@
   .application__close:hover {
     background-color: rgb(241, 128, 226);
   }
+
+.application__form {
+    color: black;
+}
