@@ -5,11 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Студия растяжки</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 
 <body>
+    <div class="preloader">
+        <div class="loader">
+            <span class="dot1"></span>
+            <span class="dot2"></span>
+            <span class="dot3"></span>
+        </div>
+        Загрузка...
+    </div>
+
+<div class="content">
+
     <!--Заголовок-->
     <header class="header container">
         <!--Логотип-->
@@ -65,7 +77,59 @@
     <section class="directions card" id="card">
         <h2 class="directions__title section__title">Направления</h2>
         <p class="directions__card">Выбери для себя понравившееся направление и приходи пробовать! </p>
-        <ul class="directions__wrap">
+
+       <!-- <div #swiperRef="" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <li class="directions__item">
+                <img src="images/stretching.jpg" alt="Stretching" class="directions__img">
+                <h3 class="directions__sudtitle">Растяжка</h3>
+                <p class="directions__test">Описание: сесть на шпагат, улучшить гибкость, основа здорового тела</p>
+                <button class="directions__link" data-id="1" type="button">Подробнее</button>
+            </li></div>
+              <div class="swiper-slide"><li class="directsion__item">
+                <img src="images/yoga.jpg" alt="Yoga" class="directions__img">
+                <h3 class="directions__sudtitle">Йога</h3>
+                <p class ="directions__test">Описание: расслабиться, понять свое тело</p>
+                <button class="directions__link" type="button">Подробнее</button>
+            </li></div>
+              <div class="swiper-slide"><li class="directions__item">
+                <img src="images/balance.jpg" alt="Balance" class="directions__img">
+                <h3 class="directions__sudtitle">Баланс</h3>
+                <p class="directions__test">Описание: выполнение поз с разными точками опоры на удержание баланса</p>
+                <button class="directions__link" type="button">Подробнее</button>  
+            </li></div>
+              <div class="swiper-slide"><li class="directions__item">
+                <img src="images/cardio.jpg" alt="Cardio" class="directions__img">
+                <h3 class="directions__sudtitle">Кардио</h3>
+                <p class="directions__test">Описание: тонус тела и сжигание калорий</p>
+                <button class="directions__link" type="button">Подробнее</button>
+            </li></div>
+            <div class="swiper-slide">
+                <li class="directions__item">
+                    <img src="images/power.jpg" alt="Power" class="directions__img">
+                    <h3 class="directions__sudtitle">Силовая</h3>
+                    <p class="directions__test">Описание: силовая тренировка с гантелями и резинками</p>
+                    <button class="directions__link" type="button">Подробнее</button> 
+                </li>    
+            </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        
+          <p class="append-buttons">
+            <button class="prepend-2-slides">Prepend 2 Slides</button>
+            <button class="prepend-slide">Prepend Slide</button>
+            <button class="append-slide">Append Slide</button>
+            <button class="append-2-slides">Append 2 Slides</button>
+          </p> -->
+        
+        
+        
+
+       <ul class="directions__wrap">
             <li class="directions__item">
                 <img src="images/stretching.jpg" alt="Stretching" class="directions__img">
                 <h3 class="directions__sudtitle">Растяжка</h3>
@@ -104,8 +168,7 @@
             <button class="directions__right">
                 <img src="images/right1.png" alt="" class="directions__right-swiper">
             </button>
-        </div>
-    </div>
+        </div> 
     </section>
 
     <section class="section record" id="record">
@@ -221,9 +284,11 @@
         <div class="bottom-bar">
             <p>&copy; 2025</p>
         </div>
-    </footer>      
+    </footer>  
+</div>   
 
     <script src="scripts/script.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
 </body>
 
 </html>

@@ -169,4 +169,76 @@ if (headerMenu) {
         const linkHtml = createLink(link); 
         headerList.insertAdjacentHTML('beforeend', linkHtml); 
     } 
-}
+
+
+    // предзагрузчик
+    const preloader = document.querySelector(".preloader");
+    const content = document.querySelector(".content");
+    if (preloader && content) {
+        setTimeout(() => {
+            // Скрываем прелоадер
+            preloader.style.opacity = "0";
+            preloader.style.visibility = "hidden";
+
+            // Показываем контент
+            content.style.display = "block";
+
+            // Удаляем элемент из DOM
+            preloader.remove();
+        }, 1000); // Задержка 1 секунда
+    }
+
+
+    // var swiper = new Swiper(".mySwiper", {
+    //     slidesPerView: 3,
+    //     centeredSlides: true,
+    //     spaceBetween: 30,
+    //     pagination: {
+    //       el: ".swiper-pagination",
+    //       type: "fraction",
+    //     },
+    //     navigation: {
+    //       nextEl: ".swiper-button-next",
+    //       prevEl: ".swiper-button-prev",
+    //     },
+    //   });
+  
+    //   var appendNumber = 4;
+    //   var prependNumber = 1;
+    //   document
+    //     .querySelector(".prepend-2-slides")
+    //     .addEventListener("click", function (e) {
+    //       e.preventDefault();
+    //       swiper.prependSlide([
+    //         '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+    //         '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+    //       ]);
+    //     });
+    //   document
+    //     .querySelector(".prepend-slide")
+    //     .addEventListener("click", function (e) {
+    //       e.preventDefault();
+    //       swiper.prependSlide(
+    //         '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
+    //       );
+    //     });
+    //   document
+    //     .querySelector(".append-slide")
+    //     .addEventListener("click", function (e) {
+    //       e.preventDefault();
+    //       swiper.appendSlide(
+    //         '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
+    //       );
+    //     });
+    //   document
+    //     .querySelector(".append-2-slides")
+    //     .addEventListener("click", function (e) {
+    //       e.preventDefault();
+    //       swiper.appendSlide([
+    //         '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+    //         '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+    //       ]);
+    //     });
+    }
+
+
