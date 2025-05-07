@@ -62,6 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
 //         const modalApplication = document.querySelector(".applications[data-id'" + dataid + "']")
 //         modalApplication.removeAttribute("hidden")
 
+// Модальное окно
 const record__button = document.querySelector(".record__button");
 const modalApplication = document.querySelector(".applications");
 if (record__button && modalApplication) {
@@ -84,44 +85,44 @@ if (record__button && modalApplication) {
         });
    
 
-// Создание слайдера
-let currentIndex = 0;
-const slider = document.querySelectorAll(".directions__item");
-const prevButton = document.querySelector(".directions__left");
-const nextButton = document.querySelector(".directions__right");
-const visibleCards = 3;
-updateSlider();
+// // Создание слайдера
+// let currentIndex = 0;
+// const slider = document.querySelectorAll(".directions__item");
+// const prevButton = document.querySelector(".directions__left");
+// const nextButton = document.querySelector(".directions__right");
+// const visibleCards = 3;
+// updateSlider();
 
-if (prevButton) {
-    prevButton.addEventListener("click", () => {
-        if (currentIndex > 0) {
-            currentIndex--;
-        } else {
-            currentIndex = slider.length - visibleCards;
-        }
-        updateSlider();
-    });
-}
-if (nextButton) {
-    nextButton.addEventListener("click", () => {
-        if (currentIndex < slider.length - visibleCards) {
-            currentIndex++;
-        } else {
-            currentIndex = 0;
-        }
-        updateSlider();
-    });
-}
+// if (prevButton) {
+//     prevButton.addEventListener("click", () => {
+//         if (currentIndex > 0) {
+//             currentIndex--;
+//         } else {
+//             currentIndex = slider.length - visibleCards;
+//         }
+//         updateSlider();
+//     });
+// }
+// if (nextButton) {
+//     nextButton.addEventListener("click", () => {
+//         if (currentIndex < slider.length - visibleCards) {
+//             currentIndex++;
+//         } else {
+//             currentIndex = 0;
+//         }
+//         updateSlider();
+//     });
+// }
 
-function updateSlider() {
-    slider.forEach((item, index) => {
-        if (index >= currentIndex && index < currentIndex + visibleCards) {
-            item.style.display = "flex";
-        } else {
-            item.style.display = "none";
-        }
-    });
-}
+// function updateSlider() {
+//     slider.forEach((item, index) => {
+//         if (index >= currentIndex && index < currentIndex + visibleCards) {
+//             item.style.display = "flex";
+//         } else {
+//             item.style.display = "none";
+//         }
+//     });
+// }
 
 // Массивы
 const wrapContainer = document.querySelector (".directions card");
@@ -187,6 +188,19 @@ if (headerMenu) {
             preloader.remove();
         }, 1000); // Задержка 1 секунда
     }
+
+    // <!-- Initialize Swiper -->
+    
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+       
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+   
 
 
     // var swiper = new Swiper(".mySwiper", {
